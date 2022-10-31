@@ -1,0 +1,169 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Art Gobblers</title><meta name="robots" content="index,follow"/><meta name="description" content="Art Gobblers - a digital art experiment by Justin Roiland and Paradigm"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@artgobblers"/><meta name="twitter:creator" content="@artgobblers"/><meta property="og:title" content="Art Gobblers"/><meta property="og:description" content="Art Gobblers - a digital art experiment by Justin Roiland and Paradigm"/><meta property="og:url" content="https://artgobblers.com"/><meta property="og:type" content="website"/><meta property="og:image" content="https://cdn.artgobblers.com/web/images/og/title-social-banner.png"/><meta property="og:image:alt" content="Art Gobblers"/><meta property="og:image:width" content="983"/><meta property="og:image:height" content="490"/><meta property="og:locale" content="en_US"/><meta property="og:site_name" content="Art Gobblers"/><meta name="twitter:image" content="https://cdn.artgobblers.com/web/images/og/title-social-banner.png"/><meta name="twitter:url" content="https://artgobblers.com"/><meta name="next-head-count" content="20"/><link rel="preload" href="/_next/static/css/4395920642fa8a72.css" as="style"/><link rel="stylesheet" href="/_next/static/css/4395920642fa8a72.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script id="createjs" src="https://cdn.artgobblers.com/web/vendor/createjs.min.js" defer="" data-nscript="beforeInteractive"></script><script id="createjs" src="https://cdn.artgobblers.com/web/vendor/createjs.min.js" defer="" data-nscript="beforeInteractive"></script><script id="createjs" src="https://cdn.artgobblers.com/web/vendor/createjs.min.js" defer="" data-nscript="beforeInteractive"></script><script src="/_next/static/chunks/webpack-d057f178dc7159c9.js" defer=""></script><script src="/_next/static/chunks/framework-560765ab0625ba27.js" defer=""></script><script src="/_next/static/chunks/main-74cadf252d81f298.js" defer=""></script><script src="/_next/static/chunks/pages/_app-09380c5c9aab37ba.js" defer=""></script><script src="/_next/static/chunks/pages/404-d24e24f5992fbdf2.js" defer=""></script><script src="/_next/static/eMSZnA61Q8Obj4_DWxeIN/_buildManifest.js" defer=""></script><script src="/_next/static/eMSZnA61Q8Obj4_DWxeIN/_ssgManifest.js" defer=""></script><style data-styled="" data-styled-version="5.3.5">html,body{font-size:16px;}/*!sc*/
+html{height:100%;width:100%;}/*!sc*/
+*{box-sizing:border-box;}/*!sc*/
+:root{--toastify-color-light:#fff;--toastify-color-dark:#121212;--toastify-color-info:#3498db;--toastify-color-success:#8EF42E;--toastify-color-warning:#f1c40f;--toastify-color-error:#e74c3c;--toastify-font-family:Matter;}/*!sc*/
+::-webkit-scrollbar{width:0;background:transparent;}/*!sc*/
+body{margin:0;font-family:"Matter",-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen', 'Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeSpeed;height:100%;width:100%;position:relative;min-height:100vh;-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;max-width:100vw;overflow-x:hidden;color:#ffffff;background:#2F3035;}/*!sc*/
+code{font-family:"MatterMono",source-code-pro,Menlo,Monaco,Consolas,'Courier New',monospace;}/*!sc*/
+#__next{width:100%;height:100%;position:relative;background:#2F3035;}/*!sc*/
+select,button{font-family:'Matter','Roboto',sans-serif;color:#17262F;outline:none;cursor:pointer;}/*!sc*/
+input,button,a,h1,h2,h3,h4,h5{font-family:'Matter';color:#ffffff;}/*!sc*/
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}/*!sc*/
+input[type='number']{-moz-appearance:textfield;outline:none;}/*!sc*/
+select::-ms-expand{display:none;}/*!sc*/
+select{-webkit-appearance:none;-moz-appearance:none;text-indent:1px;text-overflow:'';}/*!sc*/
+input,select,textarea{margin:0;}/*!sc*/
+img,video{height:auto;max-width:100%;}/*!sc*/
+input,button,textarea,select{font:inherit;}/*!sc*/
+#main-draw-outer{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow-x:hidden;border-radius:12px;}/*!sc*/
+#main-draw-outer canvas{border-radius:12px;}/*!sc*/
+#layer-row-body canvas{border-radius:2px;}/*!sc*/
+.row-contents{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+.hue-horizontal{border-radius:100px;}/*!sc*/
+.disable-save{-webkit-user-select:none;-webkit-touch-callout:none;}/*!sc*/
+data-styled.g1[id="sc-global-hMwOlT1"]{content:"sc-global-hMwOlT1,"}/*!sc*/
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}/*!sc*/
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}/*!sc*/
+*,*::before,*::after{box-sizing:border-box;}/*!sc*/
+ul{list-style:none;}/*!sc*/
+button,input,select,textarea{margin:0;}/*!sc*/
+img,video{height:auto;max-width:100%;}/*!sc*/
+input,button,textarea,select{font:inherit;}/*!sc*/
+data-styled.g2[id="sc-global-jCyLYc1"]{content:"sc-global-jCyLYc1,"}/*!sc*/
+.fmVtHH{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+data-styled.g4[id="sc-a3d18a7b-1"]{content:"fmVtHH,"}/*!sc*/
+.hBZxGF{font-style:normal;font-weight:normal;font-size:18px;line-height:130%;}/*!sc*/
+data-styled.g7[id="sc-e046d3b5-2"]{content:"hBZxGF,"}/*!sc*/
+@media (max-width:900px){.kLCcFx{font-style:normal;font-weight:bold;font-size:36px;line-height:100%;}}/*!sc*/
+data-styled.g15[id="sc-e046d3b5-10"]{content:"kLCcFx,"}/*!sc*/
+.eXRgdJ{position:absolute;}/*!sc*/
+data-styled.g29[id="sc-11e0d0af-0"]{content:"eXRgdJ,"}/*!sc*/
+.wgvG{position:relative;width:80px;height:80px;}/*!sc*/
+data-styled.g30[id="sc-11e0d0af-1"]{content:"wgvG,"}/*!sc*/
+.gTvgax{border:none;margin:0;padding:0;width:auto;overflow:visible;background:transparent;color:inherit;font:inherit;line-height:normal;-webkit-font-smoothing:inherit;-moz-osx-font-smoothing:inherit;-webkit-appearance:none;}/*!sc*/
+.gTvgax::-moz-focus-inner{border:0;padding:0;}/*!sc*/
+data-styled.g31[id="sc-420cc548-0"]{content:"gTvgax,"}/*!sc*/
+.hHUdvt{position:relative;z-index:0;font-style:normal;font-weight:bold;font-size:24px;width:100%;height:72px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;will-change:transform;line-height:105%;}/*!sc*/
+data-styled.g32[id="sc-420cc548-1"]{content:"hHUdvt,"}/*!sc*/
+.dbYcRz{position:absolute;z-index:2;top:0px;bottom:0px;right:0px;left:0px;border-radius:100px;overflow:hidden;}/*!sc*/
+data-styled.g33[id="sc-420cc548-2"]{content:"dbYcRz,"}/*!sc*/
+.fawaGO{position:absolute;z-index:3;top:0px;bottom:0px;left:0;right:0;will-change:transform;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);background-color:#dae4ea;}/*!sc*/
+data-styled.g34[id="sc-420cc548-3"]{content:"fawaGO,"}/*!sc*/
+.cQCILZ{position:relative;z-index:0;font-style:normal;font-weight:bold;font-size:20px;width:100%;height:72px;background:#080a0c;height:72px;border-radius:100px;border:4px solid #080a0c;-webkit-text-decoration:none;text-decoration:none;outline:none;box-shadow:0px 24px 32px rgba(0,0,0,0.2),0px 12px 16px rgba(0,0,0,0.16), 0px 4px 4px rgba(0,0,0,0.12),inset 0px 4px 4px rgba(255,255,255,0.25);}/*!sc*/
+data-styled.g35[id="sc-420cc548-4"]{content:"cQCILZ,"}/*!sc*/
+.ebgCOS{position:relative;color:#8ef42e;text-shadow:0px 1px 5px rgba(0,0,0,0.32);z-index:5;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);will-change:transform;line-height:100%;padding:0 8px;}/*!sc*/
+data-styled.g36[id="sc-420cc548-5"]{content:"ebgCOS,"}/*!sc*/
+h1{font-family:Matter;font-style:normal;font-weight:900;font-size:64px;line-height:100%;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;}/*!sc*/
+h2{font-family:Matter;font-style:normal;font-weight:900;font-size:48px;line-height:100%;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;}/*!sc*/
+h3{font-family:Matter;font-style:normal;font-weight:900;font-size:36px;line-height:100%;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;}/*!sc*/
+h4{font-family:Matter;font-style:normal;font-size:24px;font-weight:700;line-height:28px;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;}/*!sc*/
+h5{font-family:Matter;font-style:normal;font-weight:normal;font-size:20px;line-height:100%;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;}/*!sc*/
+p{font-family:Matter;font-style:normal;font-weight:normal;font-size:18px;line-height:23px;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;}/*!sc*/
+h1,h2,h3,h4,h5,p{color:#ffffff;}/*!sc*/
+textarea:not([autosave="false"]){background:#FFFFFF;box-sizing:border-box;outline:none;padding:20px;width:100%;box-shadow:0px 16px 24px rgba(18,18,23,0.08),0px 2px 6px rgba(18,18,23,0.02),inset 4px 8px 16px rgba(255,255,255,0.32);border-radius:24px;resize:none;height:120px;border:3px solid #CAD4DA;-webkit-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;}/*!sc*/
+textarea:not([autosave="false"]):hover{border:3px solid #868698;box-sizing:border-box;border-radius:20px;}/*!sc*/
+textarea:not([autosave="false"]):active,textarea:not([autosave="false"]):focus{border:3px solid #080A0C;box-sizing:border-box;border-radius:20px;}/*!sc*/
+data-styled.g46[id="sc-global-fkSoRq1"]{content:"sc-global-fkSoRq1,"}/*!sc*/
+.heYGaa{position:absolute;top:0;left:0;right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-left:32px;color:#080a0c;margin-right:32px;margin-top:20px;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;background-color:transparent;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:10;}/*!sc*/
+.heYGaa *{color:#080a0c;}/*!sc*/
+@media (max-width:900px){.heYGaa{margin-left:8px;margin-right:8px;}}/*!sc*/
+data-styled.g48[id="sc-c6f1a254-0"]{content:"heYGaa,"}/*!sc*/
+.eDjSQr{height:136px;min-height:136px;max-height:136px;}/*!sc*/
+@media (max-width:900px){.eDjSQr{height:120px;min-height:120px;max-height:120px;}}/*!sc*/
+data-styled.g50[id="sc-c6f1a254-2"]{content:"eDjSQr,"}/*!sc*/
+.ACNgN{padding:0 20px;}/*!sc*/
+data-styled.g51[id="sc-c6f1a254-3"]{content:"ACNgN,"}/*!sc*/
+.cweUev{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 16px;border-radius:60px;max-width:1280px;height:72px;width:100%;will-change:transform;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);background:rgba(255,255,255,0.24);}/*!sc*/
+.cweUev::-webkit-scrollbar{display:none;}/*!sc*/
+@media (max-width:720px){.cweUev{background:transparent;}}/*!sc*/
+data-styled.g54[id="sc-c6f1a254-6"]{content:"cweUev,"}/*!sc*/
+.kvPprG{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;gap:8px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+data-styled.g55[id="sc-c6f1a254-7"]{content:"kvPprG,"}/*!sc*/
+.tErTM{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}/*!sc*/
+data-styled.g56[id="sc-c6f1a254-8"]{content:"tErTM,"}/*!sc*/
+.OPFgo{position:absolute;left:0;right:0;top:-100px;opacity:0.5;bottom:-400px;display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));grid-template-rows:repeat(auto-fill,minmax(120px,1fr));}/*!sc*/
+.OPFgo > *{border-bottom:2px solid #fac74f;border-right:2px solid #fac74f;}/*!sc*/
+data-styled.g61[id="sc-98993193-0"]{content:"OPFgo,"}/*!sc*/
+.AxQYY{width:100%;position:relative;max-width:calc(1280px);margin:0 auto;padding:0 16px;height:100%;}/*!sc*/
+@media (max-width:1280px){.AxQYY{padding:0 32px;}}/*!sc*/
+@media (max-width:720px){.AxQYY{padding:0 10px;}}/*!sc*/
+data-styled.g66[id="sc-c04aded7-4"]{content:"AxQYY,"}/*!sc*/
+.jtzjyI{position:relative;min-height:100vh;max-width:100vw;width:100vw;min-width:100%;background:#2f3035;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;-webkit-flex:1;-ms-flex:1;flex:1;}/*!sc*/
+data-styled.g67[id="sc-bccafcd4-0"]{content:"jtzjyI,"}/*!sc*/
+.iECQKq{height:32px;min-height:32px;}/*!sc*/
+data-styled.g72[id="sc-472e6444-0"]{content:"iECQKq,"}/*!sc*/
+.bZfzsz{display:grid;grid-template-columns:1fr 1fr;grid-gap:20px;max-width:955px;margin:0 auto;}/*!sc*/
+@media (max-width:900px){.bZfzsz{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}/*!sc*/
+data-styled.g73[id="sc-e9ce7fac-0"]{content:"bZfzsz,"}/*!sc*/
+.fVzwsv{font-family:'Matter';font-style:normal;font-weight:700;font-size:120px;line-height:110%;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;color:#080a0c;}/*!sc*/
+data-styled.g74[id="sc-e9ce7fac-1"]{content:"fVzwsv,"}/*!sc*/
+.bKzxiT{font-family:'Matter';font-style:normal;font-weight:700;font-size:40px;line-height:110%;-webkit-letter-spacing:-0.03em;-moz-letter-spacing:-0.03em;-ms-letter-spacing:-0.03em;letter-spacing:-0.03em;color:#080a0c;}/*!sc*/
+data-styled.g75[id="sc-e9ce7fac-2"]{content:"bKzxiT,"}/*!sc*/
+</style></head><body><div id="__next" data-reactroot=""><div class="Toastify"></div><div data-rk=""><style>[data-rk]{--rk-blurs-modalOverlay:blur(4px);--rk-fonts-body:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";--rk-radii-actionButton:9999px;--rk-radii-connectButton:12px;--rk-radii-menuButton:12px;--rk-radii-modal:24px;--rk-radii-modalMobile:28px;--rk-colors-accentColor:#0E76FD;--rk-colors-accentColorForeground:#FFF;--rk-colors-actionButtonBorder:rgba(0, 0, 0, 0.04);--rk-colors-actionButtonBorderMobile:rgba(0, 0, 0, 0.06);--rk-colors-actionButtonSecondaryBackground:rgba(0, 0, 0, 0.06);--rk-colors-closeButton:rgba(60, 66, 66, 0.8);--rk-colors-closeButtonBackground:rgba(0, 0, 0, 0.06);--rk-colors-connectButtonBackground:#FFF;--rk-colors-connectButtonBackgroundError:#FF494A;--rk-colors-connectButtonInnerBackground:linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.06));--rk-colors-connectButtonText:#25292E;--rk-colors-connectButtonTextError:#FFF;--rk-colors-connectionIndicator:#30E000;--rk-colors-error:#FF494A;--rk-colors-generalBorder:rgba(0, 0, 0, 0.06);--rk-colors-generalBorderDim:rgba(0, 0, 0, 0.03);--rk-colors-menuItemBackground:rgba(60, 66, 66, 0.1);--rk-colors-modalBackdrop:rgba(0, 0, 0, 0.3);--rk-colors-modalBackground:#FFF;--rk-colors-modalBorder:transparent;--rk-colors-modalText:#25292E;--rk-colors-modalTextDim:rgba(60, 66, 66, 0.3);--rk-colors-modalTextSecondary:rgba(60, 66, 66, 0.6);--rk-colors-profileAction:#FFF;--rk-colors-profileActionHover:rgba(255, 255, 255, 0.5);--rk-colors-profileForeground:rgba(60, 66, 66, 0.06);--rk-colors-selectedOptionBorder:rgba(60, 66, 66, 0.1);--rk-colors-standby:#FFD641;--rk-shadows-connectButton:0px 4px 12px rgba(0, 0, 0, 0.1);--rk-shadows-dialog:0px 8px 32px rgba(0, 0, 0, 0.32);--rk-shadows-profileDetailsAction:0px 2px 6px rgba(37, 41, 46, 0.04);--rk-shadows-selectedOption:0px 2px 6px rgba(0, 0, 0, 0.24);--rk-shadows-selectedWallet:0px 2px 6px rgba(0, 0, 0, 0.12);--rk-shadows-walletLogo:0px 2px 16px rgba(0, 0, 0, 0.16);}</style><div data-overlay-container="true"><div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none" class=""></div><style>
+      #nprogress {
+        pointer-events: none;
+      }
+      #nprogress .bar {
+        background: #F441F0;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+      }
+      #nprogress .peg {
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 100px;
+        height: 100%;
+        box-shadow: 0 0 10px #F441F0, 0 0 5px #F441F0;
+        opacity: 1;
+        -webkit-transform: rotate(3deg) translate(0px, -4px);
+        -ms-transform: rotate(3deg) translate(0px, -4px);
+        transform: rotate(3deg) translate(0px, -4px);
+      }
+      #nprogress .spinner {
+        display: block;
+        position: fixed;
+        z-index: 1031;
+        top: 15px;
+        right: 15px;
+      }
+      #nprogress .spinner-icon {
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: solid 2px transparent;
+        border-top-color: #F441F0;
+        border-left-color: #F441F0;
+        border-radius: 50%;
+        -webkit-animation: nprogresss-spinner 400ms linear infinite;
+        animation: nprogress-spinner 400ms linear infinite;
+      }
+      .nprogress-custom-parent {
+        overflow: hidden;
+        position: relative;
+      }
+      .nprogress-custom-parent #nprogress .spinner,
+      .nprogress-custom-parent #nprogress .bar {
+        position: absolute;
+      }
+      @-webkit-keyframes nprogress-spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes nprogress-spinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style><div class="sc-c6f1a254-0 heYGaa"><div class="sc-c6f1a254-6 cweUev"><div class="sc-c6f1a254-7 kvPprG"><a href="/" class="sc-a3d18a7b-1 sc-c6f1a254-3 fmVtHH ACNgN"><div style="border-radius:100%"><div class="eye"><div style="left:-34px" class="sc-11e0d0af-1 wgvG"><div class="sc-11e0d0af-0 eXRgdJ"><img src="https://cdn.artgobblers.com/web/images/eye/eye-white.png"/></div><div style="transform:none" class="sc-11e0d0af-0 eXRgdJ"><img src="https://cdn.artgobblers.com/web/images/eye/eye-pupil.png"/></div><div class="sc-11e0d0af-0 eXRgdJ"><img src="https://cdn.artgobblers.com/web/images/eye/blink-with-delay.gif"/></div><img src="https://cdn.artgobblers.com/web/images/eye/eye-outer.png"/></div></div></div></a><span style="font-weight:600;left:-64px;position:relative" class="sc-e046d3b5-2 hBZxGF"></span></div><div class="sc-c6f1a254-8 tErTM"></div></div></div><div style="background:#EBF787;position:relative" class="sc-bccafcd4-0 jtzjyI"><div style="position:absolute" class="sc-98993193-0 OPFgo"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div style="color:#080A0C;z-index:1;display:flex;flex-direction:column;position:relative;min-height:100vh;max-width:1280px;flex:1" class="sc-c04aded7-4 AxQYY"><div style="flex-direction:column;display:flex"><div style="position:absolute;left:-200px;right:-200px;bottom:0;top:0;z-index:0;background:linear-gradient(270deg, rgba(235, 247, 135, 0.4) 0%, #EBF787 17.19%, #EBF787 82.81%, rgba(235, 247, 135, 0.4) 100%)"></div><div style="position:relative;z-index:1;display:flex;flex:1;flex-direction:column"><div class="sc-c6f1a254-2 eDjSQr"></div><div class="sc-e9ce7fac-0 bZfzsz"><div style="display:flex;justify-content:center;flex-direction:column"><h1 class="sc-e046d3b5-1 sc-e9ce7fac-1 LHAia fVzwsv">404</h1><h2 class="sc-e046d3b5-10 sc-e9ce7fac-2 kLCcFx bKzxiT">Page not found</h2><div size="32" class="sc-472e6444-0 iECQKq"></div><a href="/" type="button" style="background-color:rgba(142, 244, 46, 1);box-shadow:0px 24px 32px rgba(0, 0, 0, 0.10196078431372549), 0px 12px 16px rgba(0, 0, 0, 0.0784313725490196), 0px 4px 4px rgba(0, 0, 0, 0.058823529411764705), inset 0px 4px 4px rgba(255, 255, 255, 0.25098039215686274);border-color:rgba(8, 10, 12, 1);max-width:260px;transform:none" class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 gTvgax hHUdvt cQCILZ"><div class="sc-420cc548-2 dbYcRz"><div style="transform:translate3d(101%, 0, 0)" class="sc-420cc548-3 fawaGO"></div></div><span style="color:rgba(8, 10, 12, 1);text-shadow:0px 0px 0px rgba(0, 0, 0, 0)" class="sc-420cc548-5 ebgCOS">Back to home</span></a></div><div><img style="object-fit:cover;max-width:100%;height:550px" src="https://cdn.artgobblers.com/web/images/nedrina-with-gradient.png"/></div></div></div></div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"trpcState":{"json":{"mutations":[],"queries":[{"state":{"data":null,"dataUpdateCount":1,"dataUpdatedAt":1667171003532,"error":null,"errorUpdateCount":0,"errorUpdatedAt":0,"fetchFailureCount":0,"fetchMeta":null,"isFetching":false,"isInvalidated":false,"isPaused":false,"status":"success"},"queryKey":["user.me",{}],"queryHash":"[\"user.me\",{}]"}]}}}},"page":"/404","query":{},"buildId":"eMSZnA61Q8Obj4_DWxeIN","runtimeConfig":{"NODE_ENV":"production"},"isFallback":false,"appGip":true,"scriptLoader":[]}</script></body></html>

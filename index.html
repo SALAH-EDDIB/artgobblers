@@ -1,0 +1,3426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Art Gobblers</title>
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Art Gobblers - a digital art experiment by Justin Roiland and Paradigm"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@artgobblers" />
+    <meta name="twitter:creator" content="@artgobblers" />
+    <meta property="og:title" content="Art Gobblers" />
+    <meta
+      property="og:description"
+      content="Art Gobblers - a digital art experiment by Justin Roiland and Paradigm"
+    />
+    <meta property="og:url" content="https://artgobblers.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://cdn.artgobblers.com/web/images/og/title-social-banner.png"
+    />
+    <meta property="og:image:alt" content="Art Gobblers" />
+    <meta property="og:image:width" content="983" />
+    <meta property="og:image:height" content="490" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Art Gobblers" />
+    <meta
+      name="twitter:image"
+      content="https://cdn.artgobblers.com/web/images/og/title-social-banner.png"
+    />
+    <meta name="twitter:url" content="https://artgobblers.com" />
+    
+   
+    <meta name="next-head-count" content="25" />
+    <link
+      rel="preload"
+      href="/_next/static/css/4395920642fa8a72.css"
+      as="style"
+    />
+    <link rel="stylesheet" href="css/css-4395920642fa8a72.css" data-n-g="" />
+    <noscript data-n-css=""></noscript>
+    <script
+      defer
+      nomodule=""
+      src="js/chunks-polyfills-c67a75d1b6f99dc8.js"
+    ></script>
+    <script
+      id="createjs"
+      src="js/vendor-createjs.min.js"
+      defer
+      data-nscript="beforeInteractive"
+    ></script>
+    <script
+      id="createjs"
+      src="js/vendor-createjs.min.js"
+      defer
+      data-nscript="beforeInteractive"
+    ></script>
+    <script
+      id="createjs"
+      src="js/vendor-createjs.min.js"
+      defer
+      data-nscript="beforeInteractive"
+    ></script>
+    <script src="js/chunks-webpack-d057f178dc7159c9.js" defer></script>
+    <script src="js/chunks-framework-560765ab0625ba27.js" defer></script>
+    <script src="js/chunks-main-74cadf252d81f298.js" defer></script>
+    <script src="js/pages-_app-09380c5c9aab37ba.js" defer></script>
+    <script src="js/chunks-5675-d4f3938a5c214103.js" defer></script>
+    <script src="js/chunks-4503-3e793826996b6509.js" defer></script>
+    <script src="js/chunks-7500-223f79b509d83a0f.js" defer></script>
+    <script src="js/pages-index-03ccd611072640fa.js" defer></script>
+    
+    <style >
+      html,
+      body {
+        font-size: 16px;
+      } /*!sc*/
+      html {
+        height: 100%;
+        width: 100%;
+      } /*!sc*/
+      * {
+        box-sizing: border-box;
+      } /*!sc*/
+      :root {
+        --toastify-color-light: #fff;
+        --toastify-color-dark: #121212;
+        --toastify-color-info: #3498db;
+        --toastify-color-success: #8ef42e;
+        --toastify-color-warning: #f1c40f;
+        --toastify-color-error: #e74c3c;
+        --toastify-font-family: Matter;
+      } /*!sc*/
+      ::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+      } /*!sc*/
+      body {
+        margin: 0;
+        font-family: "Matter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeSpeed;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        min-height: 100vh;
+        -webkit-scroll-behavior: smooth;
+        -moz-scroll-behavior: smooth;
+        -ms-scroll-behavior: smooth;
+        scroll-behavior: smooth;
+        max-width: 100vw;
+        overflow-x: hidden;
+        color: #ffffff;
+        background: #2f3035;
+      } /*!sc*/
+      code {
+        font-family: "MatterMono", source-code-pro, Menlo, Monaco, Consolas,
+          "Courier New", monospace;
+      } /*!sc*/
+      #__next {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: #2f3035;
+      } /*!sc*/
+      select,
+      button {
+        font-family: "Matter", "Roboto", sans-serif;
+        color: #17262f;
+        outline: none;
+        cursor: pointer;
+      } /*!sc*/
+      input,
+      button,
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Matter";
+        color: #ffffff;
+      } /*!sc*/
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      } /*!sc*/
+      input[type="number"] {
+        -moz-appearance: textfield;
+        outline: none;
+      } /*!sc*/
+      select::-ms-expand {
+        display: none;
+      } /*!sc*/
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: "";
+      } /*!sc*/
+      input,
+      select,
+      textarea {
+        margin: 0;
+      } /*!sc*/
+      img,
+      video {
+        height: auto;
+        max-width: 100%;
+      } /*!sc*/
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      } /*!sc*/
+      #main-draw-outer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        overflow-x: hidden;
+        border-radius: 12px;
+      } /*!sc*/
+      #main-draw-outer canvas {
+        border-radius: 12px;
+      } /*!sc*/
+      #layer-row-body canvas {
+        border-radius: 2px;
+      } /*!sc*/
+      .row-contents {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      } /*!sc*/
+      .hue-horizontal {
+        border-radius: 100px;
+      } /*!sc*/
+      .disable-save {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      } /*!sc*/
+      data-styled.g1[id="sc-global-hMwOlT1"] {
+        content: "sc-global-hMwOlT1,";
+      } /*!sc*/
+      html,
+      body,
+      p,
+      ol,
+      ul,
+      li,
+      dl,
+      dt,
+      dd,
+      blockquote,
+      figure,
+      fieldset,
+      legend,
+      textarea,
+      pre,
+      iframe,
+      hr,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      } /*!sc*/
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 100%;
+        font-weight: normal;
+      } /*!sc*/
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      } /*!sc*/
+      ul {
+        list-style: none;
+      } /*!sc*/
+      button,
+      input,
+      select,
+      textarea {
+        margin: 0;
+      } /*!sc*/
+      img,
+      video {
+        height: auto;
+        max-width: 100%;
+      } /*!sc*/
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      } /*!sc*/
+      data-styled.g2[id="sc-global-jCyLYc1"] {
+        content: "sc-global-jCyLYc1,";
+      } /*!sc*/
+      .dxAqVy {
+        font-family: "Matter", "Roboto", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", "Oxygen";
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: inherit;
+        color: #080a0c;
+        cursor: pointer;
+        -webkit-transition: color 0.15s ease;
+        transition: color 0.15s ease;
+      } /*!sc*/
+      @media (max-width: 720px) {
+        .dxAqVy {
+          font-size: inherit;
+        }
+      } /*!sc*/
+      .dxAqVy:hover {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+      } /*!sc*/
+      data-styled.g3[id="sc-a3d18a7b-0"] {
+        content: "dxAqVy,";
+      } /*!sc*/
+      .fmVtHH {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+      } /*!sc*/
+      data-styled.g4[id="sc-a3d18a7b-1"] {
+        content: "fmVtHH,";
+      } /*!sc*/
+      .hBZxGF {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 130%;
+      } /*!sc*/
+      data-styled.g7[id="sc-e046d3b5-2"] {
+        content: "hBZxGF,";
+      } /*!sc*/
+      @media (max-width: 900px) {
+        .cuxaOW {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+        }
+      } /*!sc*/
+      data-styled.g16[id="sc-e046d3b5-11"] {
+        content: "cuxaOW,";
+      } /*!sc*/
+      .eXRgdJ {
+        position: absolute;
+      } /*!sc*/
+      data-styled.g29[id="sc-11e0d0af-0"] {
+        content: "eXRgdJ,";
+      } /*!sc*/
+      .wgvG {
+        position: relative;
+        width: 80px;
+        height: 80px;
+      } /*!sc*/
+      data-styled.g30[id="sc-11e0d0af-1"] {
+        content: "wgvG,";
+      } /*!sc*/
+      .gTvgax {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        overflow: visible;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+      } /*!sc*/
+      .gTvgax::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      } /*!sc*/
+      data-styled.g31[id="sc-420cc548-0"] {
+        content: "gTvgax,";
+      } /*!sc*/
+      .hHUdvt {
+        position: relative;
+        z-index: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        width: 100%;
+        height: 72px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        will-change: transform;
+        line-height: 105%;
+      } /*!sc*/
+      data-styled.g32[id="sc-420cc548-1"] {
+        content: "hHUdvt,";
+      } /*!sc*/
+      .dbYcRz {
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        border-radius: 100px;
+        overflow: hidden;
+      } /*!sc*/
+      data-styled.g33[id="sc-420cc548-2"] {
+        content: "dbYcRz,";
+      } /*!sc*/
+      .fawaGO {
+        position: absolute;
+        z-index: 3;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        will-change: transform;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background-color: #dae4ea;
+      } /*!sc*/
+      data-styled.g34[id="sc-420cc548-3"] {
+        content: "fawaGO,";
+      } /*!sc*/
+      .cQCILZ {
+        position: relative;
+        z-index: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
+        height: 72px;
+        background: #080a0c;
+        height: 72px;
+        border-radius: 100px;
+        border: 4px solid #080a0c;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        outline: none;
+        box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.2),
+          0px 12px 16px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.12),
+          inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+      } /*!sc*/
+      data-styled.g35[id="sc-420cc548-4"] {
+        content: "cQCILZ,";
+      } /*!sc*/
+      .ebgCOS {
+        position: relative;
+        color: #8ef42e;
+        text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.32);
+        z-index: 5;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        will-change: transform;
+        line-height: 100%;
+        padding: 0 8px;
+      } /*!sc*/
+      data-styled.g36[id="sc-420cc548-5"] {
+        content: "ebgCOS,";
+      } /*!sc*/
+      .bfVjNJ {
+        position: relative;
+        height: 56px;
+        width: 56px;
+        min-width: 56px;
+        max-width: 56px;
+        border-radius: 100%;
+        background: #080a0c;
+        border: 3px solid #080a0c;
+        box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.1),
+          0px 12px 16px rgba(0, 0, 0, 0.08), 0px 4px 4px rgba(0, 0, 0, 0.06),
+          inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+        border-radius: 40px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #ffffff;
+        will-change: transform;
+        outline: none;
+        overflow: hidden;
+      } /*!sc*/
+      data-styled.g37[id="sc-420cc548-6"] {
+        content: "bfVjNJ,";
+      } /*!sc*/
+      .dxrxLh {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        left: 16px;
+        top: 16px;
+        width: 100%;
+        height: 24px;
+        width: 24px;
+        -webkit-filter: drop-shadow(-1px -3px 4px rgba(255, 255, 255, 0.2))
+          drop-shadow(0px 16px 32px rgba(27, 26, 37, 0.24))
+          drop-shadow(0px 12px 24px rgba(27, 26, 37, 0.16))
+          drop-shadow(0px 4px 8px rgba(27, 26, 37, 0.12));
+        filter: drop-shadow(-1px -3px 4px rgba(255, 255, 255, 0.2))
+          drop-shadow(0px 16px 32px rgba(27, 26, 37, 0.24))
+          drop-shadow(0px 12px 24px rgba(27, 26, 37, 0.16))
+          drop-shadow(0px 4px 8px rgba(27, 26, 37, 0.12));
+        border-radius: 40%;
+      } /*!sc*/
+      data-styled.g38[id="sc-420cc548-7"] {
+        content: "dxrxLh,";
+      } /*!sc*/
+      h1 {
+        font-family: Matter;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 100%;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+      } /*!sc*/
+      h2 {
+        font-family: Matter;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 100%;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+      } /*!sc*/
+      h3 {
+        font-family: Matter;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 100%;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+      } /*!sc*/
+      h4 {
+        font-family: Matter;
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+      } /*!sc*/
+      h5 {
+        font-family: Matter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 100%;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+      } /*!sc*/
+      p {
+        font-family: Matter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+      } /*!sc*/
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      p {
+        color: #ffffff;
+      } /*!sc*/
+      textarea:not([autosave="false"]) {
+        background: #ffffff;
+        box-sizing: border-box;
+        outline: none;
+        padding: 20px;
+        width: 100%;
+        box-shadow: 0px 16px 24px rgba(18, 18, 23, 0.08),
+          0px 2px 6px rgba(18, 18, 23, 0.02),
+          inset 4px 8px 16px rgba(255, 255, 255, 0.32);
+        border-radius: 24px;
+        resize: none;
+        height: 120px;
+        border: 3px solid #cad4da;
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+      } /*!sc*/
+      textarea:not([autosave="false"]):hover {
+        border: 3px solid #868698;
+        box-sizing: border-box;
+        border-radius: 20px;
+      } /*!sc*/
+      textarea:not([autosave="false"]):active,
+      textarea:not([autosave="false"]):focus {
+        border: 3px solid #080a0c;
+        box-sizing: border-box;
+        border-radius: 20px;
+      } /*!sc*/
+      data-styled.g46[id="sc-global-fkSoRq1"] {
+        content: "sc-global-fkSoRq1,";
+      } /*!sc*/
+      .heYGaa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 32px;
+        color: #080a0c;
+        margin-right: 32px;
+        margin-top: 20px;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        background-color: transparent;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        z-index: 10;
+      } /*!sc*/
+      .heYGaa * {
+        color: #080a0c;
+      } /*!sc*/
+      @media (max-width: 900px) {
+        .heYGaa {
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+      } /*!sc*/
+      data-styled.g48[id="sc-c6f1a254-0"] {
+        content: "heYGaa,";
+      } /*!sc*/
+      .eDjSQr {
+        height: 136px;
+        min-height: 136px;
+        max-height: 136px;
+      } /*!sc*/
+      @media (max-width: 900px) {
+        .eDjSQr {
+          height: 120px;
+          min-height: 120px;
+          max-height: 120px;
+        }
+      } /*!sc*/
+      data-styled.g50[id="sc-c6f1a254-2"] {
+        content: "eDjSQr,";
+      } /*!sc*/
+      .ACNgN {
+        padding: 0 20px;
+      } /*!sc*/
+      data-styled.g51[id="sc-c6f1a254-3"] {
+        content: "ACNgN,";
+      } /*!sc*/
+      .eVrRNa {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 16px;
+        border-radius: 60px;
+        max-width: 1280px;
+        height: 72px;
+        width: 100%;
+        will-change: transform;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background: rgba(255, 255, 255, 0.24);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+      } /*!sc*/
+      .eVrRNa::-webkit-scrollbar {
+        display: none;
+      } /*!sc*/
+      @media (max-width: 720px) {
+        .eVrRNa {
+          background: transparent;
+        }
+      } /*!sc*/
+      data-styled.g54[id="sc-c6f1a254-6"] {
+        content: "eVrRNa,";
+      } /*!sc*/
+      .kvPprG {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 8px;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      } /*!sc*/
+      data-styled.g55[id="sc-c6f1a254-7"] {
+        content: "kvPprG,";
+      } /*!sc*/
+      .tErTM {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+      } /*!sc*/
+      data-styled.g56[id="sc-c6f1a254-8"] {
+        content: "tErTM,";
+      } /*!sc*/
+      .OPFgo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -100px;
+        opacity: 0.5;
+        bottom: -400px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+      } /*!sc*/
+      .OPFgo > * {
+        border-bottom: 2px solid #fac74f;
+        border-right: 2px solid #fac74f;
+      } /*!sc*/
+      data-styled.g61[id="sc-98993193-0"] {
+        content: "OPFgo,";
+      } /*!sc*/
+      .kFhVlV {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      } /*!sc*/
+      data-styled.g62[id="sc-c04aded7-0"] {
+        content: "kFhVlV,";
+      } /*!sc*/
+      .AxQYY {
+        width: 100%;
+        position: relative;
+        max-width: calc(1280px);
+        margin: 0 auto;
+        padding: 0 16px;
+        height: 100%;
+      } /*!sc*/
+      @media (max-width: 1280px) {
+        .AxQYY {
+          padding: 0 32px;
+        }
+      } /*!sc*/
+      @media (max-width: 720px) {
+        .AxQYY {
+          padding: 0 10px;
+        }
+      } /*!sc*/
+      data-styled.g66[id="sc-c04aded7-4"] {
+        content: "AxQYY,";
+      } /*!sc*/
+      .jtzjyI {
+        position: relative;
+        min-height: 100vh;
+        max-width: 100vw;
+        width: 100vw;
+        min-width: 100%;
+        background: #2f3035;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        overflow: hidden;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      } /*!sc*/
+      data-styled.g67[id="sc-bccafcd4-0"] {
+        content: "jtzjyI,";
+      } /*!sc*/
+      .cLxZma {
+        height: 80px;
+        min-height: 80px;
+      } /*!sc*/
+      .kTHHGW {
+        height: 36px;
+        min-height: 36px;
+      } /*!sc*/
+      .hPIfIi {
+        height: 550px;
+        min-height: 550px;
+      } /*!sc*/
+      .iZYfJu {
+        height: 72px;
+        min-height: 72px;
+      } /*!sc*/
+      .ceKscy {
+        height: 20px;
+        min-height: 20px;
+      } /*!sc*/
+      data-styled.g72[id="sc-472e6444-0"] {
+        content: "cLxZma,kTHHGW,hPIfIi,iZYfJu,ceKscy,";
+      } /*!sc*/
+      .JWbgY {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+      } /*!sc*/
+      data-styled.g74[id="sc-cc5e329d-0"] {
+        content: "JWbgY,";
+      } /*!sc*/
+      .bxPuzv {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-align-items: flex-start;
+        -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+        align-items: flex-start;
+        padding: 0 20px;
+        max-width: 1280px;
+        z-index: 1;
+      } /*!sc*/
+      data-styled.g75[id="sc-cc5e329d-1"] {
+        content: "bxPuzv,";
+      } /*!sc*/
+      .gFoTnc {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 260px 1fr 500px;
+        grid-template-rows: 1fr;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      } /*!sc*/
+      @media (max-width: 1000px) {
+        .gFoTnc {
+          grid-template-columns: auto;
+          grid-template-rows: auto;
+          row-gap: 24px;
+          justify-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+        }
+      } /*!sc*/
+      data-styled.g76[id="sc-b4f96cca-0"] {
+        content: "gFoTnc,";
+      } /*!sc*/
+      .tHyCY {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      } /*!sc*/
+      @media (max-width: 1000px) {
+      } /*!sc*/
+      data-styled.g77[id="sc-b4f96cca-1"] {
+        content: "tHyCY,";
+      } /*!sc*/
+      .hzOFev {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 110%;
+        max-width: 500px;
+        width: 500px;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+        color: #080a0c;
+      } /*!sc*/
+      @media (max-width: 1000px) {
+        .hzOFev {
+          width: 90vw;
+        }
+      } /*!sc*/
+      data-styled.g78[id="sc-b4f96cca-2"] {
+        content: "hzOFev,";
+      } /*!sc*/
+      .eVmEWs {
+        border-bottom: 1px solid #fac74f;
+        height: 1px;
+        max-width: 500px;
+        width: 500px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      } /*!sc*/
+      @media (max-width: 1000px) {
+        .eVmEWs {
+          width: 90vw;
+        }
+      } /*!sc*/
+      data-styled.g79[id="sc-b4f96cca-3"] {
+        content: "eVmEWs,";
+      } /*!sc*/
+      .KXJGP {
+        margin: 0 auto;
+        max-width: 1000px;
+       display: flex;
+       flex-direction: column;
+      } /*!sc*/
+      
+        .KXJGP {
+          
+          justify-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+        }
+       /*!sc*/
+      data-styled.g80[id="sc-daacefac-0"] {
+        content: "KXJGP,";
+      } /*!sc*/
+      .dhYRBL {
+        color: black;
+        font-size: 92px;
+      } /*!sc*/
+      @media (max-width: 1000px) {
+        .dhYRBL {
+          text-align: center;
+          font-size: 52px;
+        }
+      } /*!sc*/
+      data-styled.g81[id="sc-daacefac-1"] {
+        content: "dhYRBL,";
+      } /*!sc*/
+      .kJTdBY {
+        font-size: 20px;
+        font-weight: 700;
+        color: #080a0c;
+        margin-top: 20px;
+      } /*!sc*/
+      @media (max-width: 1000px) {
+        .kJTdBY {
+          text-align: center;
+        }
+      } /*!sc*/
+      data-styled.g82[id="sc-daacefac-2"] {
+        content: "kJTdBY,";
+      } /*!sc*/
+      .eLBGdb {
+        position: absolute;
+        width: 1017.52px;
+        height: 351.05px;
+        left: 100px;
+        top: -200px;
+        background: linear-gradient(180deg, #6bf1fd 0%, #96ff94 92.6%);
+        opacity: 0.7;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        -webkit-transform: translate3d(0, 0, 0),
+          matrix(0.97, -0.24, -0.24, -0.97, 0, 0);
+        -ms-transform: translate3d(0, 0, 0),
+          matrix(0.97, -0.24, -0.24, -0.97, 0, 0);
+        transform: translate3d(0, 0, 0), matrix(0.97, -0.24, -0.24, -0.97, 0, 0);
+        z-index: 2;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .eLBGdb {
+          opacity: 0.3;
+        }
+      } /*!sc*/
+      data-styled.g83[id="sc-daacefac-3"] {
+        content: "eLBGdb,";
+      } /*!sc*/
+      .jYsrhr {
+        position: absolute;
+        width: 1200px;
+        height: 670px;
+        background: linear-gradient(180deg, #6bf1fd 0%, #96ff94 100%);
+        opacity: 0.5;
+        -webkit-filter: blur(204px);
+        filter: blur(204px);
+        -webkit-transform: translate3d(0, 0, 0), matrix(1, 0, 0, -1, 0, 0);
+        -ms-transform: translate3d(0, 0, 0), matrix(1, 0, 0, -1, 0, 0);
+        transform: translate3d(0, 0, 0), matrix(1, 0, 0, -1, 0, 0);
+        z-index: 1;
+        left: 0px;
+      } /*!sc*/
+      data-styled.g85[id="sc-daacefac-5"] {
+        content: "jYsrhr,";
+      } /*!sc*/
+      .kCahgk {
+        overflow: hidden;
+        left: 0px;
+        margin-top: -26px;
+        position: absolute;
+        background-color: white;
+        background: #ffffff;
+        box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.06),
+          0px 12px 20px rgba(0, 0, 0, 0.05), 0px 4px 8px rgba(0, 0, 0, 0.02);
+        border-radius: 40px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 460px 1fr;
+        padding: 80px;
+        z-index: 2;
+      } /*!sc*/
+      @media (min-width: 1200px) {
+        .kCahgk {
+          height: 660px;
+        }
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .kCahgk {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          margin-top: -2vw;
+          padding: 52px;
+          height: 880px;
+        }
+      } /*!sc*/
+      @media (max-width: 500px) {
+        .kCahgk {
+          padding: 32px;
+          height: 500px;
+        }
+      } /*!sc*/
+      data-styled.g86[id="sc-daacefac-6"] {
+        content: "kCahgk,";
+      } /*!sc*/
+      .kbyBPx {
+        z-index: 10;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .kbyBPx {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+      } /*!sc*/
+      data-styled.g87[id="sc-daacefac-7"] {
+        content: "kbyBPx,";
+      } /*!sc*/
+      .LcgZK {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .LcgZK {
+          top: 260px;
+          left: calc(50vw - 230px);
+        }
+      } /*!sc*/
+      @media (max-width: 500px) {
+        .LcgZK {
+          display: none;
+        }
+      } /*!sc*/
+      data-styled.g89[id="sc-daacefac-9"] {
+        content: "LcgZK,";
+      } /*!sc*/
+      .eOkvAi {
+        position: absolute;
+        right: 12px;
+        bottom: 0px;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .eOkvAi {
+          left: calc(50vw - 450px);
+        }
+      } /*!sc*/
+      @media (max-width: 500px) {
+        .eOkvAi {
+          left: calc(50vw - 270px);
+        }
+      } /*!sc*/
+      data-styled.g90[id="sc-daacefac-10"] {
+        content: "eOkvAi,";
+      } /*!sc*/
+      .eNTwdP {
+        position: absolute;
+        right: 680px;
+        top: 50px;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .eNTwdP {
+          margin-top: 220px;
+          left: calc(50vw - 330px);
+        }
+      } /*!sc*/
+      @media (max-width: 500px) {
+        .eNTwdP {
+          display: none;
+        }
+      } /*!sc*/
+      data-styled.g91[id="sc-daacefac-11"] {
+        content: "eNTwdP,";
+      } /*!sc*/
+      .iSUVdk {
+        width: 800px;
+        height: 500px;
+        position: relative;
+      } /*!sc*/
+      @media (max-width: 500px) {
+        .iSUVdk {
+          width: 500px;
+          height: 312px;
+        }
+      } /*!sc*/
+      data-styled.g92[id="sc-daacefac-12"] {
+        content: "iSUVdk,";
+      } /*!sc*/
+      .fWWNhB {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 110%;
+        max-width: 600px;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+        color: #080a0c;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .fWWNhB {
+          text-align: center;
+          font-size: 32px;
+          min-height: 70px;
+        }
+      } /*!sc*/
+      data-styled.g93[id="sc-daacefac-13"] {
+        content: "fWWNhB,";
+      } /*!sc*/
+      .jZuwIW {
+        margin-top: 160px;
+        font-family: "Matter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 110%;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+        color: #080a0c;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .jZuwIW {
+          display: none;
+        }
+      } /*!sc*/
+      data-styled.g94[id="sc-daacefac-14"] {
+        content: "jZuwIW,";
+      } /*!sc*/
+      .keMXul {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: min(42vw, 600px) min(42vw, 600px);
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        z-index: -1;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .keMXul {
+          grid-template-columns: 40vw 40vw;
+        }
+      } /*!sc*/
+      data-styled.g95[id="sc-daacefac-15"] {
+        content: "keMXul,";
+      } /*!sc*/
+      .lmvPFf {
+        width: min(42vw, 600px);
+        height: calc(min(42vw, 600px) / 3.04);
+        position: relative;
+        margin-top: 2px;
+      } /*!sc*/
+      data-styled.g96[id="sc-daacefac-16"] {
+        content: "lmvPFf,";
+      } /*!sc*/
+      .fbimRY {
+        width: min(42vw, 600px);
+        height: calc(min(42vw, 600px) / 2.87);
+        margin-top: 6px;
+        position: relative;
+      } /*!sc*/
+      data-styled.g97[id="sc-daacefac-17"] {
+        content: "fbimRY,";
+      } /*!sc*/
+      .eAhjjE {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 260px 1fr 717px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-items: center;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .eAhjjE {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+      } /*!sc*/
+      data-styled.g98[id="sc-daacefac-18"] {
+        content: "eAhjjE,";
+      } /*!sc*/
+      .egJdpC {
+        font-size: 48px;
+        font-weight: 600;
+        color: #080a0c;
+        line-height: 110%;
+        -webkit-letter-spacing: -0.03em;
+        -moz-letter-spacing: -0.03em;
+        -ms-letter-spacing: -0.03em;
+        letter-spacing: -0.03em;
+        width: 717px;
+      } /*!sc*/
+      @media (max-width: 1200px) {
+        .egJdpC {
+          text-align: center;
+          font-size: 42px;
+        }
+      } /*!sc*/
+      @media (max-width: 800px) {
+        .egJdpC {
+          text-align: center;
+          font-size: 32px;
+          width: 100%;
+        }
+      } /*!sc*/
+      data-styled.g99[id="sc-daacefac-19"] {
+        content: "egJdpC,";
+      } /*!sc*/
+    </style>
+  </head>
+  <body>
+    <div id="__next" data-reactroot="">
+      <div class="Toastify"></div>
+      <div data-rk="">
+        <style>
+          [data-rk] {
+            --rk-blurs-modalOverlay: blur(4px);
+            --rk-fonts-body: -apple-system, BlinkMacSystemFont, "Segoe UI",
+              Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Symbol";
+            --rk-radii-actionButton: 9999px;
+            --rk-radii-connectButton: 12px;
+            --rk-radii-menuButton: 12px;
+            --rk-radii-modal: 24px;
+            --rk-radii-modalMobile: 28px;
+            --rk-colors-accentColor: #0e76fd;
+            --rk-colors-accentColorForeground: #fff;
+            --rk-colors-actionButtonBorder: rgba(0, 0, 0, 0.04);
+            --rk-colors-actionButtonBorderMobile: rgba(0, 0, 0, 0.06);
+            --rk-colors-actionButtonSecondaryBackground: rgba(0, 0, 0, 0.06);
+            --rk-colors-closeButton: rgba(60, 66, 66, 0.8);
+            --rk-colors-closeButtonBackground: rgba(0, 0, 0, 0.06);
+            --rk-colors-connectButtonBackground: #fff;
+            --rk-colors-connectButtonBackgroundError: #ff494a;
+            --rk-colors-connectButtonInnerBackground: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.03),
+              rgba(0, 0, 0, 0.06)
+            );
+            --rk-colors-connectButtonText: #25292e;
+            --rk-colors-connectButtonTextError: #fff;
+            --rk-colors-connectionIndicator: #30e000;
+            --rk-colors-error: #ff494a;
+            --rk-colors-generalBorder: rgba(0, 0, 0, 0.06);
+            --rk-colors-generalBorderDim: rgba(0, 0, 0, 0.03);
+            --rk-colors-menuItemBackground: rgba(60, 66, 66, 0.1);
+            --rk-colors-modalBackdrop: rgba(0, 0, 0, 0.3);
+            --rk-colors-modalBackground: #fff;
+            --rk-colors-modalBorder: transparent;
+            --rk-colors-modalText: #25292e;
+            --rk-colors-modalTextDim: rgba(60, 66, 66, 0.3);
+            --rk-colors-modalTextSecondary: rgba(60, 66, 66, 0.6);
+            --rk-colors-profileAction: #fff;
+            --rk-colors-profileActionHover: rgba(255, 255, 255, 0.5);
+            --rk-colors-profileForeground: rgba(60, 66, 66, 0.06);
+            --rk-colors-selectedOptionBorder: rgba(60, 66, 66, 0.1);
+            --rk-colors-standby: #ffd641;
+            --rk-shadows-connectButton: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            --rk-shadows-dialog: 0px 8px 32px rgba(0, 0, 0, 0.32);
+            --rk-shadows-profileDetailsAction: 0px 2px 6px
+              rgba(37, 41, 46, 0.04);
+            --rk-shadows-selectedOption: 0px 2px 6px rgba(0, 0, 0, 0.24);
+            --rk-shadows-selectedWallet: 0px 2px 6px rgba(0, 0, 0, 0.12);
+            --rk-shadows-walletLogo: 0px 2px 16px rgba(0, 0, 0, 0.16);
+          }
+        </style>
+        <div data-overlay-container="true">
+          <div
+            style="
+              position: fixed;
+              z-index: 9999;
+              top: 16px;
+              left: 16px;
+              right: 16px;
+              bottom: 16px;
+              pointer-events: none;
+            "
+            class=""
+          ></div>
+          <style>
+            #nprogress {
+              pointer-events: none;
+            }
+            #nprogress .bar {
+              background: #f441f0;
+              position: fixed;
+              z-index: 9999;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 2px;
+            }
+            #nprogress .peg {
+              display: block;
+              position: absolute;
+              right: 0px;
+              width: 100px;
+              height: 100%;
+              box-shadow: 0 0 10px #f441f0, 0 0 5px #f441f0;
+              opacity: 1;
+              -webkit-transform: rotate(3deg) translate(0px, -4px);
+              -ms-transform: rotate(3deg) translate(0px, -4px);
+              transform: rotate(3deg) translate(0px, -4px);
+            }
+            #nprogress .spinner {
+              display: block;
+              position: fixed;
+              z-index: 1031;
+              top: 15px;
+              right: 15px;
+            }
+            #nprogress .spinner-icon {
+              width: 18px;
+              height: 18px;
+              box-sizing: border-box;
+              border: solid 2px transparent;
+              border-top-color: #f441f0;
+              border-left-color: #f441f0;
+              border-radius: 50%;
+              -webkit-animation: nprogresss-spinner 400ms linear infinite;
+              animation: nprogress-spinner 400ms linear infinite;
+            }
+            .nprogress-custom-parent {
+              overflow: hidden;
+              position: relative;
+            }
+            .nprogress-custom-parent #nprogress .spinner,
+            .nprogress-custom-parent #nprogress .bar {
+              position: absolute;
+            }
+            @-webkit-keyframes nprogress-spinner {
+              0% {
+                -webkit-transform: rotate(0deg);
+              }
+              100% {
+                -webkit-transform: rotate(360deg);
+              }
+            }
+            @keyframes nprogress-spinner {
+              0% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          </style>
+          <div class="sc-c6f1a254-0 heYGaa">
+            <div class="sc-c6f1a254-6 eVrRNa">
+              <div class="sc-c6f1a254-7 kvPprG">
+                <a
+                  href="artgobblers.html"
+                  class="sc-a3d18a7b-1 sc-c6f1a254-3 fmVtHH ACNgN"
+                  ><div style="border-radius: 100%">
+                    <div class="eye">
+                      <div style="left: -34px" class="sc-11e0d0af-1 wgvG">
+                        <div class="sc-11e0d0af-0 eXRgdJ">
+                          <img src="images/eye-eye-white.png" />
+                        </div>
+                        <div
+                          style="transform: none"
+                          class="sc-11e0d0af-0 eXRgdJ"
+                        >
+                          <img src="images/eye-eye-pupil.png" />
+                        </div>
+                        <div class="sc-11e0d0af-0 eXRgdJ">
+                          <img src="images/eye-blink-with-delay.gif" />
+                        </div>
+                        <img src="images/eye-eye-outer.png" />
+                      </div>
+                    </div></div></a
+                ><span
+                  style="font-weight: 600; left: -64px; position: relative"
+                  class="sc-e046d3b5-2 hBZxGF"
+                ></span>
+              </div>
+              <div class="sc-c6f1a254-8 tErTM"></div>
+            </div>
+          </div>
+          <link
+            rel="preload"
+            href="/fonts/matter/Matter-Heavy.woff2"
+            as="font"
+            crossorigin=""
+            type="font/woff2"
+          /><link
+            rel="preload"
+            href="/fonts/matter/Matter-Bold.woff2"
+            as="font"
+            crossorigin=""
+            type="font/woff2"
+          /><link
+            rel="preload"
+            href="/fonts/matter/Matter-Regular.woff2"
+            as="font"
+            crossorigin=""
+            type="font/woff2"
+          /><link
+            rel="preload"
+            href="/fonts/matter/Matter-SemiBold.woff2"
+            as="font"
+            crossorigin=""
+            type="font/woff2"
+          /><link
+            rel="preload"
+            as="image"
+            href="favicons/images-logo-simple.png"
+          /><link
+            rel="preload"
+            as="image"
+            href="favicons/images-about-bg-1.png"
+          /><link
+            rel="preload"
+            as="image"
+            href="favicons/images-about-bg-2.png"
+          /><link
+            rel="preload"
+            as="image"
+            href="favicons/images-gobbler-invite-full.png"
+          />
+          <div
+            style="background: #ebf787; position: relative"
+            class="sc-bccafcd4-0 jtzjyI"
+          >
+            <div style="position: absolute" class="sc-98993193-0 OPFgo">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div
+              style="
+                color: #080a0c;
+                z-index: 1;
+                position: relative;
+                min-height: 100vh;
+                max-width: 1280px;
+                display: flex;
+                flex-direction: column;
+                transform: translate3d(0, 0, 0);
+              "
+              class="sc-c04aded7-4 AxQYY"
+            >
+              <div
+                style="
+                  position: absolute;
+                  left: -200px;
+                  right: -200px;
+                  bottom: 0;
+                  top: 0;
+                  z-index: 0;
+                  background: linear-gradient(
+                    270deg,
+                    rgba(235, 247, 135, 0.4) 0%,
+                    #ebf787 17.19%,
+                    #ebf787 82.81%,
+                    rgba(235, 247, 135, 0.4) 100%
+                  );
+                "
+              ></div>
+              <div class="sc-daacefac-3 eLBGdb"></div>
+              <div style="position: relative; z-index: 1; padding: 0 8px">
+                <div class="sc-c6f1a254-2 eDjSQr"></div>
+                <div class="sc-daacefac-0 KXJGP" style="display: flex; flex-direction: column; align-items: center;">
+                  <div
+                    style="
+                      max-width: 400px;
+                      margin-top: 16px;
+                      opacity: 0;
+                      transform: translate3d(0, 8px, 0);
+                    "
+                  >
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0;
+                          margin: 0;
+                          padding: 0;
+                          max-width: 100%;
+                        "
+                        ><img
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0;
+                            margin: 0;
+                            padding: 0;
+                          "
+                          alt=""
+                          aria-hidden="true"
+                          src="./images/logo-simple.png" /></span
+                      ></span>
+                  </div>
+                  <div style="opacity: 0; transform: translate3d(0, 8px, 0)">
+                    <h3 class="sc-e046d3b5-11 sc-daacefac-1 cuxaOW dhYRBL" style="text-align: center;">
+                      Experimental<br />Decentralized Art Factory
+                    </h3>
+                    <div>
+                      <div class="sc-daacefac-2 kJTdBY">
+                        By Justin Roiland and Paradigm
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div size="80" class="sc-472e6444-0 cLxZma"></div>
+                <div class="sc-daacefac-15 keMXul">
+                  <div
+                    style="
+                      z-index: 2;
+                      opacity: 0;
+                      transform: translate3d(0, 8px, 0);
+                    "
+                  >
+                    <div class="sc-daacefac-16 lmvPFf">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0;
+                          margin: 0;
+                          padding: 0;
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                        "
+                        ><img
+                          sizes="100vw"
+                          
+                          src="./images/about-bg-1.png"
+                          decoding="async"
+                          data-nimg="fill"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            box-sizing: border-box;
+                            padding: 0;
+                            border: none;
+                            margin: auto;
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                            object-fit: contain;
+                          "
+                      /></span>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      z-index: 2;
+                      opacity: 0;
+                      transform: translate3d(0, 8px, 0);
+                    "
+                  >
+                    <div class="sc-daacefac-17 fbimRY">
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0;
+                          margin: 0;
+                          padding: 0;
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                        "
+                        ><img
+                          sizes="100vw"
+                          
+                          src="./images/about-bg-2.png"
+                          decoding="async"
+                          data-nimg="fill"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            box-sizing: border-box;
+                            padding: 0;
+                            border: none;
+                            margin: auto;
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                            object-fit: contain;
+                          "
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sc-daacefac-5 jYsrhr"></div>
+                <div class="sc-daacefac-6 kCahgk" style="display: flex;
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center; height: auto;" >
+                  <div class="sc-daacefac-7 kbyBPx" style="display: flex;
+                  flex-direction: column;
+                  -webkit-box-align: center;
+                  align-items: center;" >
+                    <div class="sc-daacefac-13 fWWNhB">
+ Mint
+                    </div>
+                    <div size="36" class="sc-472e6444-0 kTHHGW"></div>
+                    <a
+                      href="draw.html"
+                      type="button"
+                      style="
+                        background-color: rgba(8, 10, 12, 1);
+                        box-shadow: 0px 24px 32px
+                            rgba(0, 0, 0, 0.10196078431372549),
+                          0px 12px 16px rgba(0, 0, 0, 0.0784313725490196),
+                          0px 4px 4px rgba(0, 0, 0, 0.058823529411764705),
+                          inset 0px 4px 4px
+                            rgba(255, 255, 255, 0.25098039215686274);
+                        border-color: rgba(8, 10, 12, 1);
+                        width: 270px;
+                        height: 72px;
+                        transform: none;
+                      "
+                      class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 gTvgax hHUdvt cQCILZ"
+                      ><div class="sc-420cc548-2 dbYcRz">
+                        <div
+                          style="transform: translate3d(101%, 0, 0)"
+                          class="sc-420cc548-3 fawaGO"
+                        ></div>
+                      </div>
+                      <span
+                        style="
+                          color: #8ef42e;
+                          text-shadow: 0px 1px 4px
+                            rgba(0, 0, 0, 0.3215686274509804);
+                          font-weight: 700;
+                          font-size: 24px;
+                        "
+                        class="sc-420cc548-5 ebgCOS"
+                        >Start Mint</span
+                      ></a
+                    >
+                    <div class="sc-daacefac-14 jZuwIW">
+                      but that's just one piece of the puzzle...
+                    </div>
+                  </div>
+                  <div class="sc-daacefac-9 LcgZK">
+                    <div
+                      style="width: 400px; height: 400px; position: relative"
+                    >
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0;
+                          margin: 0;
+                          padding: 0;
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                        "
+                        ><img
+                          sizes="100vw"
+                          srcset="
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=640&amp;q=75   640w,
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=750&amp;q=75   750w,
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=828&amp;q=75   828w,
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=1080&amp;q=75 1080w,
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=1200&amp;q=75 1200w,
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=1920&amp;q=75 1920w,
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=2048&amp;q=75 2048w,
+                            /_next/image?url=https%3A%2F%2Fcdn.artgobblers.com%2Fweb%2Fimages%2Fdefault-bg-800.png&amp;w=3840&amp;q=75 3840w
+                          "
+                          src="images/_next-image"
+                          decoding="async"
+                          data-nimg="fill"
+                          style="
+                            border-radius: 20px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            box-sizing: border-box;
+                            padding: 0;
+                            border: none;
+                            margin: auto;
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                            object-fit: contain;
+                          "
+                      /></span>
+                    </div>
+                  </div>
+                  <div class="sc-daacefac-10 eOkvAi">
+                    
+                  </div>
+                  <div class="sc-daacefac-11 eNTwdP">
+       
+                    <div
+                      style="
+                        opacity: 0;
+                        position: absolute;
+                        margin-top: 72px;
+                        margin-left: 64px;
+                        transform: translate3d(0, 8px, 0);
+                      "
+                    >
+                      <button
+                        size="86"
+                        type="button"
+                        style="
+                          height: 86px;
+                          width: 86px;
+                          min-width: 86px;
+                          min-height: 86px;
+                          background: rgba(8, 10, 12, 1);
+                          border-color: rgba(8, 10, 12, 1);
+                          transform: none;
+                        "
+                        class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 sc-420cc548-6 gTvgax hHUdvt cQCILZ bfVjNJ"
+                      >
+                        <div class="sc-420cc548-7 dxrxLh"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          fill="none"
+                          viewbox="0 0 20 20"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            fill-rule="evenodd"
+                            d="M12.7 2.6l4.9 6.7c.3.3.7 1.1.1 2.4-.4.8-1 1.6-1.7 2.3-1.1 1.1-2.5 2-3.6 2-.4 0-.8-.1-1.1-.4l-6.7-4.9c-1.4-1.4.1-4.2 2-6.1 1-1 2.1-1.8 3.1-2.2 1.7-.7 2.6-.2 3 .2zM11.2 4c-.4 0-1.7.5-3.2 2-1.5 1.4-1.9 2.7-2 3.2.4 0 1.7-.5 3.2-2 1.5-1.5 2-2.8 2-3.2zM4 12s-2 2.9-2 4 .9 2 2 2 2-.9 2-2-2-4-2-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      style="
+                        opacity: 0;
+                        position: absolute;
+                        margin-top: 16px;
+                        margin-left: 152px;
+                        transform: translate3d(0, 8px, 0);
+                      "
+                    >
+                      <button
+                        size="86"
+                        type="button"
+                        style="
+                          height: 86px;
+                          width: 86px;
+                          min-width: 86px;
+                          min-height: 86px;
+                          background: rgba(8, 10, 12, 1);
+                          border-color: rgba(8, 10, 12, 1);
+                          transform: none;
+                        "
+                        class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 sc-420cc548-6 gTvgax hHUdvt cQCILZ bfVjNJ"
+                      >
+                        <div class="sc-420cc548-7 dxrxLh"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          fill="none"
+                          viewbox="0 0 20 20"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            fill-rule="evenodd"
+                            d="M11.4 14H6.6l-3.3-3.3c-.4-.4-.4-1 0-1.4l7-7c.4-.4 1-.4 1.4 0l5 5c.4.4.4 1 0 1.4L11.4 14zM2 16h16v2H2v-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      style="
+                        opacity: 0;
+                        position: absolute;
+                        margin-top: 0;
+                        margin-left: 255px;
+                        transform: translate3d(0, 8px, 0);
+                      "
+                    >
+                      <button
+                        size="86"
+                        type="button"
+                        style="
+                          height: 86px;
+                          width: 86px;
+                          min-width: 86px;
+                          min-height: 86px;
+                          background: rgba(8, 10, 12, 1);
+                          border-color: rgba(8, 10, 12, 1);
+                          transform: none;
+                        "
+                        class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 sc-420cc548-6 gTvgax hHUdvt cQCILZ bfVjNJ"
+                      >
+                        <div class="sc-420cc548-7 dxrxLh"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          fill="none"
+                          viewbox="0 0 20 20"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            d="M2 2v6h1l2-3h3v10l-3 2v1h10v-1l-3-2V5h3l2 3h1V2H2z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      style="
+                        opacity: 0;
+                        position: absolute;
+                        margin-top: 16px;
+                        margin-left: 358px;
+                        transform: translate3d(0, 8px, 0);
+                      "
+                    >
+                      <button
+                        size="86"
+                        type="button"
+                        style="
+                          height: 86px;
+                          width: 86px;
+                          min-width: 86px;
+                          min-height: 86px;
+                          background: rgba(8, 10, 12, 1);
+                          border-color: rgba(8, 10, 12, 1);
+                          transform: none;
+                        "
+                        class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 sc-420cc548-6 gTvgax hHUdvt cQCILZ bfVjNJ"
+                      >
+                        <div class="sc-420cc548-7 dxrxLh"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          fill="none"
+                          viewbox="0 0 20 20"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            d="M17 4a1 1 0 00-1 1v4a.5.5 0 01-1 0V3.553a1.037 1.037 0 00-.832-1.04A1 1 0 0013 3.5V9a.5.5 0 01-1 0V3.053a1.037 1.037 0 00-.832-1.039A1 1 0 0010 3v6a.5.5 0 01-1 0V3.553a1.037 1.037 0 00-.832-1.039A1 1 0 007 3.5v7.793a.5.5 0 01-.854.354l-2-2A1.08 1.08 0 002.91 9.4a1.032 1.032 0 00-.442 1.434l2.31 4.108A5.999 5.999 0 0010.01 18h1.99a6 6 0 006-6V5a1 1 0 00-1-1z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      style="
+                        opacity: 0;
+                        position: absolute;
+                        margin-top: 72px;
+                        margin-left: 445px;
+                        transform: translate3d(0, 8px, 0);
+                      "
+                    >
+                      <button
+                        size="86"
+                        type="button"
+                        style="
+                          height: 86px;
+                          width: 86px;
+                          min-width: 86px;
+                          min-height: 86px;
+                          background: rgba(8, 10, 12, 1);
+                          border-color: rgba(8, 10, 12, 1);
+                          transform: none;
+                        "
+                        class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 sc-420cc548-6 gTvgax hHUdvt cQCILZ bfVjNJ"
+                      >
+                        <div class="sc-420cc548-7 dxrxLh"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          fill="none"
+                          viewbox="0 0 20 20"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            d="M10 7a10.07 10.07 0 00-6 2.017V7H2v5a1 1 0 001 1h5v-2H4.722A8.058 8.058 0 0110 9a8.06 8.06 0 015.657 2.343l1.414-1.414A10.068 10.068 0 0010 7z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      style="
+                        opacity: 0;
+                        position: absolute;
+                        margin-top: 152px;
+                        margin-left: 510px;
+                        transform: translate3d(0, 8px, 0);
+                      "
+                    >
+                      <button
+                        size="86"
+                        type="button"
+                        style="
+                          height: 86px;
+                          width: 86px;
+                          min-width: 86px;
+                          min-height: 86px;
+                          background: rgba(8, 10, 12, 1);
+                          border-color: rgba(8, 10, 12, 1);
+                          transform: none;
+                        "
+                        class="sc-420cc548-0 sc-420cc548-1 sc-420cc548-4 sc-420cc548-6 gTvgax hHUdvt cQCILZ bfVjNJ"
+                      >
+                        <div class="sc-420cc548-7 dxrxLh"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          fill="none"
+                          viewbox="0 0 20 20"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            d="M10.07 7c2.161 0 4.278.729 6 2.017V7h2v5a1 1 0 01-1 1h-5v-2h3.278a8.058 8.058 0 00-5.278-2 8.055 8.055 0 00-5.656 2.343L3 9.929A10.066 10.066 0 0110.07 7z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div size="550" class="sc-472e6444-0 hPIfIi"></div>
+                <div class="sc-daacefac-18 eAhjjE">
+                  <div style="width: 276px; height: 360px; position: relative">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                      "
+                      ><img
+                        src="./images/glomp-lom-lom.png"
+                        
+                        
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                          box-sizing: border-box;
+                          padding: 0;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0;
+                          height: 0;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: contain;
+                        " /></span>
+                  </div>
+                  <div></div>
+                  <div style="opacity: 0; transform: translate3d(0, 8px, 0)">
+                    <div class="sc-daacefac-19 egJdpC">
+                      We're building a self-sustaining ecosystem centered around
+                      creating and collecting the coolest art in the universe.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div size="72" class="sc-472e6444-0 iZYfJu"></div>
+            </div>
+            <div
+              style="
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                color: #080a0c;
+                flex: 0;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+                background-color: #f8ffc0;
+                padding: 64px 0px;
+              "
+              class="sc-c04aded7-0 kFhVlV"
+            >
+              <div class="sc-cc5e329d-0 JWbgY">
+                <div class="sc-cc5e329d-1 bxPuzv">
+                  <div class="sc-b4f96cca-0 gFoTnc">
+                    <div class="sc-b4f96cca-1 tHyCY">
+                      <div style="width: 171px; margin-right: 16px">
+                        <span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0;
+                            margin: 0;
+                            padding: 0;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0;
+                              margin: 0;
+                              padding: 0;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0;
+                                margin: 0;
+                                padding: 0;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="images/svg%27%20version=%271.1%27%20width=%27756%27%20height=%27304%27-%3e" /></span
+                          ><img
+                            src="images/gif;base64,R0lGODlhAQABAIAAAAAAAP-yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              width: 0;
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              bottom: 0;
+                              right: 0;
+                              box-sizing: border-box;
+                              padding: 0;
+                              border: none;
+                              margin: auto;
+                              display: block;
+                              height: 0;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            " /><noscript
+                            ><img
+                              srcset="
+                                /_next/image?url=%2Fimages%2Fdark-logo-simple.png&amp;w=828&amp;q=75  1x,
+                                /_next/image?url=%2Fimages%2Fdark-logo-simple.png&amp;w=1920&amp;q=75 2x
+                              "
+                              src="images/_next-image"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                width: 0;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                right: 0;
+                                box-sizing: border-box;
+                                padding: 0;
+                                border: none;
+                                margin: auto;
+                                display: block;
+                                height: 0;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              "
+                              loading="lazy" /></noscript
+                        ></span>
+                      </div>
+                    </div>
+                    <div></div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                      "
+                    >
+                      <div style="font-weight: 600">Contact</div>
+                      <div size="20" class="sc-472e6444-0 ceKscy"></div>
+                      <div class="sc-b4f96cca-2 hzOFev">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://twitter.com/artgobblers"
+                          style="color: #080a0c; font-weight: 700"
+                          class="sc-a3d18a7b-0 dxAqVy"
+                          >Follow us on Twitter</a
+                        >
+                      </div>
+                      <div class="sc-b4f96cca-3 eVmEWs"></div>
+                      <div class="sc-b4f96cca-2 hzOFev">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://feedback.ag.xyz/"
+                          style="color: #080a0c; font-weight: 700"
+                          class="sc-a3d18a7b-0 dxAqVy"
+                          >Report a bug</a
+                        >
+                      </div>
+                      <div class="sc-b4f96cca-3 eVmEWs"></div>
+                      <div class="sc-b4f96cca-2 hzOFev">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/cdn-cgi/l/email-protection#6c0f0302180d0f182c0d1e180b030e0e00091e1f420f0301"
+                          style="color: #080a0c; font-weight: 700"
+                          class="sc-a3d18a7b-0 dxAqVy"
+                          >Email us</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {
+            "trpcState": {
+              "json": {
+                "mutations": [],
+                "queries": [
+                  {
+                    "state": {
+                      "data": null,
+                      "dataUpdateCount": 1,
+                      "dataUpdatedAt": 1667170993740,
+                      "error": null,
+                      "errorUpdateCount": 0,
+                      "errorUpdatedAt": 0,
+                      "fetchFailureCount": 0,
+                      "fetchMeta": null,
+                      "isFetching": false,
+                      "isInvalidated": false,
+                      "isPaused": false,
+                      "status": "success"
+                    },
+                    "queryKey": ["user.me", {}],
+                    "queryHash": "[\"user.me\",{}]"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "page": "/",
+        "query": {},
+        "buildId": "eMSZnA61Q8Obj4_DWxeIN",
+        "runtimeConfig": { "NODE_ENV": "production" },
+        "isFallback": false,
+        "appGip": true,
+        "scriptLoader": []
+      }
+    </script>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function(event){
+  
+  const myTimeout = setTimeout(myStopFunction, 100);
+
+function myStopFunction() {
+  var button3  = document.querySelector(".sc-420cc548-5");
+  button3.textContent = "Start Mint"
+  clearTimeout(myTimeout);
+}
+
+
+  var button  = document.querySelector(".sc-c6f1a254-8");
+  var button2  = document.querySelector(".sc-daacefac-13");
+  document.querySelector(".sc-daacefac-0").children[1].remove()
+  document.querySelector(".sc-daacefac-11").remove()
+  document.querySelector(".sc-daacefac-14").remove()
+  // var button3  = document.querySelector(".sc-420cc548-5");
+      console.log("buttonggggggggggggggggggggggggggggg");
+      button.remove()
+      button2.textContent = "MINT"
+      // button3.textContent = "Start Mint"
+      console.log(button3);
+      console.log("buttonggggggggggggggggggggggggggggg");
+    })
+
+    </script>
+  </body>
+</html>
